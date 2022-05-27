@@ -1,0 +1,1 @@
+export const icons = { black: '⚫', red: '🔴', white: '⚪', win: '✅', loss: '❌' };

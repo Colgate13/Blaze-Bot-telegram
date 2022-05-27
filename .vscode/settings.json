@@ -1,0 +1,13 @@
+{
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code",
+  "editor.tabSize": 2,
+  "material-icon-theme.folders.associations": {
+    "infra": "server",
+    "http": "context",
+    "repositories": "template",
+    "telegraf": "template",
+    "axios": "api",
+    "Tiles": "template"
+  },
+}
