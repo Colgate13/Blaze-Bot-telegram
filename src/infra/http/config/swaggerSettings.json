@@ -149,7 +149,7 @@
                 }
             }
         },
-        "/tribozord/blazetileos/": {
+        "/tribozord/blazetiles/": {
             "/tiles": {
                 "get": {
                     "description": "Returns all the tiles",

@@ -18,13 +18,7 @@ class BotService {
             colorSend: colorSend,
             check: false
         });
-        console.log("SAVE =>", {
-            chatId: messageSend.chatId,
-            messageId: messageSend.messageId,
-            dateSend: dateSend,
-            colorSend: colorSend,
-            check: false
-        })
+
         return messageSend;
     }
 

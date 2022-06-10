@@ -2,14 +2,6 @@ import PredictTiles from '../PredictTiles/PredictTiles';
 import { HistoryTilesRaw } from '../PredictTiles/domain/TilesBlaze';
 import { RawMessage } from '../../shared/config/messageModel';
 import { icons } from '../../shared/config/Icons';
-// const RawMessage = `🤖Tribo Blaze 2.0 - Beta ON!
-// Entrada: $icon
-
-// - - - ATÉ GALE 2 - - -
-
-// ⏰ HORÁRIO: $date
-
-// 🧮SINAL DOUBLE🧮`
 
 interface IdPredictOne {
     message: string,

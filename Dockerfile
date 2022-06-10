@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install curl gnupg -y \
   && apt-get install google-chrome-stable -y --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
+RUN apt update && apt install tzdata -y
+ENV TZ="America/Sao_Paulo"
+
 WORKDIR /usr/src/app
 
 # Install Puppeteer under /node_modules so it's available system-wide

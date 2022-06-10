@@ -10,9 +10,7 @@ export default class PredictTiles {
   }
 
   static async PredictIcon({ black, red, white }: IIcons, tilesRaw: HistoryTilesRaw[]): Promise<any> {
-    console.log(tilesRaw);
     const tiles = (new Tiles(tilesRaw)).predictOne;
-    console.log("tiles ->", tiles);
 
     let Icon = '';
     let TileColorTip = '';

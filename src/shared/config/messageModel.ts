@@ -1,4 +1,4 @@
-export const RawMessage = `🤖Tribo Blaze 2.0 - Beta ON!
+export const RawMessage = `🤖Tribo Blaze🤖
 Entrada: $icon
 
 - - - ATÉ GALE 2 - - -

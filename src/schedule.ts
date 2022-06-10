@@ -22,7 +22,7 @@ try {
 console.log("> Server - Start")
 
 cron.schedule('0 0 */3 * * *', async () => {
-  console.log("> Server - Inicializando nova Page")
+  console.log("> Server - Reloading the page");
   try {
     (async () => {
       BlazePage = await Scraping.scrapingSocket();
@@ -39,7 +39,7 @@ cron.schedule('10,20,30,40,50,59 * * * *', async () => {
 
 });
 
-cron.schedule('30 0,11,21,31,41,51 * * * *', async () => {
+cron.schedule('33 0,11,21,31,41,51 * * * *', async () => {
 
   const check = await CheckTile.check(await Scraping.getTilesSocket(BlazePage));
 
@@ -50,15 +50,12 @@ cron.schedule('30 0,11,21,31,41,51 * * * *', async () => {
 
   switch (check.colorSend) {
     case 'black':
-      console.log("black");
       message = message.replace('$icon', `${icons.black} + ${icons.white}`);
       break;
     case 'red':
-      console.log("red");
       message = message.replace('$icon', `${icons.red} + ${icons.white}`);
       break;
     case 'white':
-      console.log("white");
       message = message.replace('$icon', `${icons.white} + ${icons.white}`);
       break;
     default:
