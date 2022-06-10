@@ -31,11 +31,6 @@ export default class CheckTile {
 
     const [gale1, gale2, gale3] = (new Tiles(tilesRaw)).lastFive;
 
-    console.log(gale1, gale2, gale3);
-    // const gale1 = lastTiles[0];
-    // const gale2 = lastTiles[1];
-    // const gale3 = lastTiles[2];
-
     if (gale1.color == dbTiles.colorSend || dbTiles.colorSend == 'white') {
       await TilesRepository.insetCheckTrue(dbTiles.id);
 

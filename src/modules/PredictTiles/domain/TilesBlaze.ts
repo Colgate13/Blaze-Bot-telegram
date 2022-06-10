@@ -97,7 +97,6 @@ export class Tiles {
   }
 
   get predictOne() {
-    console.log(this.tilesHistory);
     let blackChange = 0, redChange = 0, whiteChange = 0;
 
     let blackCount = this.countBlack.length;
