@@ -36,8 +36,8 @@ COPY tsconfig.json .
 COPY src ./src 
 RUN npm run build
 
-ENV PM2_PUBLIC_KEY ryrwhkrwn12hmlz
-ENV PM2_SECRET_KEY ziwmw3k8h3t9abh
+ENV PM2_PUBLIC_KEY KEY_PUBLIC_HERE
+ENV PM2_SECRET_KEY KEY_SECRET_HERE
 
 COPY . .
 
