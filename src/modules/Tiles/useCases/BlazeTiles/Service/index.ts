@@ -35,7 +35,6 @@ export class Scraping {
     }
 
     static async getTilesSocket(Page: Page): Promise<any[]> {
-
         const html = await Page.content();
         const $ = cheerio.load(html);
 

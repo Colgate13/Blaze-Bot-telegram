@@ -25,7 +25,7 @@ export default class PredictTiles {
       Icon = `${white}`;
       TileColorTip = 'white';
     } else {
-      throw 'Dont should get Icon or TileColorTip';
+      throw 'Do not should get Icon or TileColorTip';
     }
 
     return {
