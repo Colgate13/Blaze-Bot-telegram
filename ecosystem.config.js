@@ -3,6 +3,8 @@ module.exports = {
         name: "blaze-bot",
         script: "dist/schedule.js",
         env: {
+            BOT_ID: "YOU_BOT_ID",
+            CHAT_ID: "YOU_CHAT_ID",
             NODE_ENV: "development",
             PORT: "3000",
             CRON_SENDTILE: "10,20,30,40,50,59 * * * *",

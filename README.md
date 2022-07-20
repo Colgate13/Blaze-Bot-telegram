@@ -48,6 +48,23 @@ npx prisma migrate dev --name init
 
 Edit file src/schedule.ts;
 
+ecosystem.config.js
+
+```
+env: {
+    BOT_ID: "YOU_BOT_ID",
+    CHAT_ID: "YOU_CHAT_ID",
+    NODE_ENV: "development",
+    PORT: "3000",
+    CRON_SENDTILE: "10,20,30,40,50,59 * * * *",
+    CRON_CHECKTILE: "33 0,11,21,31,41,51 * * * *",
+}
+```
+
+or
+
+src/schedule.ts
+
 ```js
 const BotId = "BOT_ID_HERE";
 const triboChatId = "CHAT_ID_HERE";
